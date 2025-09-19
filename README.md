@@ -23,13 +23,7 @@ Enter the code for admin.py and models.py
 Execute Django admin and create details for 10 books
 
 ## PROGRAM
-'''
-admin.py
-
-from django.contrib import admin
-from.models import Car,CarAdmin
-admin.site.register(Car,CarAdmin)@
-
+```
 models.py
 
 from django.db import models
@@ -42,7 +36,13 @@ class Car(models.Model):
     dop=models.DateField()
 class CarAdmin(admin.ModelAdmin):
     list_display=['car_id','brand','car_model','cos_email','dop']
-'''
+
+admin.py
+
+from django.contrib import admin
+from.models import Car,CarAdmin
+admin.site.register(Car,CarAdmin)
+```
 
 
 ## OUTPUT
